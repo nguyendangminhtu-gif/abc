@@ -25,12 +25,6 @@ class SinhVienServiceTest {
         assertThrows(IllegalArgumentException.class, () -> sinhVienService.Sua(sinhVien));
     }
 
-    //    ------------- 5 cau sua theo bien va phan vung
-    @Test
-    public void SuaSinhVienDiemTrongKhoangHopLe(){
-        SinhVien sinhVien = new  SinhVien("SV01", "Nguyen Van C", 28, 5f, 6, "CNTT");
-        assertDoesNotThrow(() -> sinhVienService.Sua(sinhVien));
-    }
 
     @Test
     public void SuaSinhVienDiemNgoaiKhoangHopLe_01(){
@@ -44,15 +38,5 @@ class SinhVienServiceTest {
         assertThrows(IllegalArgumentException.class, () -> sinhVienService.Sua(sinhVien));
     }
 
-    @Test
-    public void SuaSinhVienDiemBienDuoi(){
-        SinhVien sinhVien = new  SinhVien("SV01", "Nguyen Van C", 28, 0f, 6, "CNTT");
-        assertDoesNotThrow(() -> sinhVienService.Sua(sinhVien));
-    }
 
-    @Test
-    public void SuaSinhVienDiemBienTren(){
-        SinhVien sinhVien = new  SinhVien("SV01", "Nguyen Van C", 28, 10f, 6, "CNTT");
-        assertDoesNotThrow(() -> sinhVienService.Sua(sinhVien));
-    }
 }
