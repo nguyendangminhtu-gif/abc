@@ -9,6 +9,6 @@ public class TbcMang {
         for(int value : arr){
             tong += value;
         }
-        return (int) tong / arr.length;
+        return tong / arr.length;
     }
 }

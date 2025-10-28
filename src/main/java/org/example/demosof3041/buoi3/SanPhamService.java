@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SanPhamService {
-    private List<SanPham> danhSach = new ArrayList<>();
+    private final List<SanPham> danhSach = new ArrayList<>();
 
     public boolean themSanPham(SanPham sp) {
         if (sp.getSoLuong() <= 0 || sp.getSoLuong() >= 100) {

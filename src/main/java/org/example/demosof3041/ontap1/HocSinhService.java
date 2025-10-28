@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HocSinhService {
-    private List<HocSinh> hocSinhs = new ArrayList<HocSinh>();
+    private final List<HocSinh> hocSinhs = new ArrayList<HocSinh>();
 
     public boolean themHocSinh(HocSinh hocSinh){
         if(hocSinh.getTen() == null || hocSinh.getTen().trim().isEmpty()){

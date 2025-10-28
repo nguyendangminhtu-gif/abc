@@ -14,31 +14,31 @@ class TinhTongTest {
 
     @Test
     public void TinhTongHopLe(){
-        int arr[]= {1,2,3,4,5};
+        int[] arr = {1,2,3,4,5};
         assertEquals(15,tinhTong.TinhTongMangSoNguyen(arr));
     }
 
     @Test
     public void TinhTongHopLeTaiBienTren99(){
-        int arr[]= {1,2,3,4,99};
+        int[] arr = {1,2,3,4,99};
         assertEquals(109,tinhTong.TinhTongMangSoNguyen(arr));
     }
 
     @Test
     public void TinhTongMangNull(){
-        int arr[] = {};
+        int[] arr = {};
         assertThrows(IllegalArgumentException.class,()->tinhTong.TinhTongMangSoNguyen(arr));
     }
 
     @Test
     public void TinhTongMangAm(){
-        int arr[] = {-1,2,3,4,5};
+        int[] arr = {-1,2,3,4,5};
         assertThrows(IllegalArgumentException.class,()->tinhTong.TinhTongMangSoNguyen(arr));
     }
 
     @Test
     public void TinhTongMangLonHon1000(){
-        int arr[] = {1001,2,3,4,5};
+        int[] arr = {1001,2,3,4,5};
         assertThrows(IllegalArgumentException.class,()->tinhTong.TinhTongMangSoNguyen(arr));
     }
 }
